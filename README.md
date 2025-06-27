@@ -16,6 +16,7 @@ A comprehensive and blazingly fast Zsh configuration designed for developers who
 
 ### Development Tools Integration
 - **Git**: 40+ aliases for efficient workflow
+- **Tmux**: Session management with predefined development layouts
 - **C++**: CMake, debugging, embedded development focus
 - **Go**: Testing, benchmarking, module management
 - **Vue.js**: NPM/Yarn shortcuts, development servers
@@ -44,8 +45,9 @@ cd ~/.dotfiles
 # Run the macOS setup script (installs essential tools via Homebrew)
 ./install-macos.sh
 
-# Install the zsh configuration
+# Install the configurations
 cp .zshrc ~/.zshrc
+cp .tmux.conf ~/.tmux.conf
 
 # Reload your shell
 source ~/.zshrc

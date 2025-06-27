@@ -24,6 +24,7 @@ brew install cmake
 brew install go
 brew install node
 brew install postgresql@17
+brew install tmux
 
 # Essential utilities for shell experience
 echo "Installing essential utilities..."
@@ -52,9 +53,15 @@ echo ""
 echo "Installation complete!"
 echo ""
 echo "Next steps:"
-echo "1. Copy the .zshrc file to your home directory: cp .zshrc ~/.zshrc"
+echo "1. Copy configuration files:"
+echo "   cp .zshrc ~/.zshrc"
+echo "   cp .tmux.conf ~/.tmux.conf"
 echo "2. Restart your terminal or run: source ~/.zshrc"
 echo "3. Configure Git with your details:"
 echo "   git config --global user.name 'Your Name'"
 echo "   git config --global user.email 'your.email@example.com'"
+echo "4. Start tmux with development layouts:"
+echo "   tmux-dev (for general development)"
+echo "   tmux-fullstack (for backend + frontend)"
+echo "   tmux-embedded (for embedded C++ work)"
 echo ""

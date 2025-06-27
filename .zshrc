@@ -249,6 +249,18 @@ extract <file>    = extract any archive format
 backup <file>     = create .bak copy
 weather [city]    = show weather
 serve [port]      = start HTTP server (default: 8000)
+envcheck          = analyze environment files for security issues
+
+=== Tmux Session Management ===
+t                 = tmux
+ta                = tmux attach (to last session)
+tls               = tmux list sessions
+tat <name>        = tmux attach to specific session
+tns <name>        = tmux new session with name
+tks <name>        = tmux kill session
+tmux-dev          = development layout (3 panes)
+tmux-fullstack    = fullstack layout (backend/frontend/logs)
+tmux-embedded     = embedded layout (code/build/serial)
 
 === Claude Code Shortcuts ===
 claude-init       = initialize project setup
@@ -325,6 +337,17 @@ else
     alias ports-listening='ss -tuln'
     alias process-tree='pstree -p'
 fi
+
+# Tmux shortcuts
+alias t='tmux'
+alias ta='tmux attach'
+alias tls='tmux list-sessions'
+alias tat='tmux attach -t'
+alias tns='tmux new-session -s'
+alias tks='tmux kill-session -t'
+alias tmux-dev='tmux new-session -s dev \; split-window -h -p 30 \; split-window -v -p 50 \; select-pane -t 0'
+alias tmux-fullstack='tmux new-session -s fullstack \; split-window -h -p 50 \; split-window -v -p 30 \; select-pane -t 0'
+alias tmux-embedded='tmux new-session -s embedded \; split-window -h -p 40 \; split-window -v -p 50 \; select-pane -t 0'
 
 # Claude Code project shortcuts
 alias claude-init='claude --print "initialize this project with proper structure, gitignore, and development setup"'
