@@ -1,0 +1,13 @@
+# System files
+.DS_Store
+*.log
+*.tmp
+
+# Personal files (not to be shared)
+TODO.md
+STRUCTURE.md
+CLAUDE.md
+
+# Local customizations
+.zshrc.local
+.zshrc.work
